@@ -2340,14 +2340,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 1, y: 2, z: 0}
-  - {x: 6.42023, y: 1.9040356, z: 0.45461798}
-  - {x: -0.6783266, y: 3, z: 2.69099}
-  - {x: 4, y: 3, z: 5}
+  - {x: 3.684588, y: 9.656079, z: -8.696711}
+  - {x: 9.104818, y: 9.560115, z: -8.242092}
+  - {x: -8.851155, y: 10.084488, z: 5.1326966}
+  - {x: -4.172829, y: 10.084488, z: 7.441707}
   modes: 0000000000000000
   loop: 0
   isRand: 1
-  width: 5
+  width: 2
   nbBezier: 2
   modeAlea: 2
 --- !u!4 &1354446669
@@ -2358,7 +2358,7 @@ Transform:
   m_GameObject: {fileID: 1354446667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 646194460}
   m_Father: {fileID: 0}
@@ -3291,7 +3291,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751121640}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -2.03, y: 0.33, z: 3.62}
+  m_LocalPosition: {x: -0.99, y: 1.19, z: -1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
