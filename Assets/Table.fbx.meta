@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 80cb5d2ba8d438f45b4ccdb20102f97a
+timeCreated: 1515884581
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Lamp
+    100004: Plane.000
+    100006: Plane.000_MeshPart0
+    100008: Plane.000_MeshPart1
+    100010: Plane.000_MeshPart2
+    100012: Plane.001
+    100014: Plane.001_MeshPart0
+    100016: Plane.001_MeshPart1
+    100018: Plane.001_MeshPart2
+    100020: Plane.001_MeshPart3
+    100022: Plane.002
+    100024: Plane.003
+    100026: Plane.004
+    100028: Plane.005
+    100030: Plane.006
+    100032: Plane.007
+    100034: //RootNode
+    400000: Camera
+    400002: Lamp
+    400004: Plane.000
+    400006: Plane.000_MeshPart0
+    400008: Plane.000_MeshPart1
+    400010: Plane.000_MeshPart2
+    400012: Plane.001
+    400014: Plane.001_MeshPart0
+    400016: Plane.001_MeshPart1
+    400018: Plane.001_MeshPart2
+    400020: Plane.001_MeshPart3
+    400022: Plane.002
+    400024: Plane.003
+    400026: Plane.004
+    400028: Plane.005
+    400030: Plane.006
+    400032: Plane.007
+    400034: //RootNode
+    2000000: Camera
+    2300000: Plane.000_MeshPart0
+    2300002: Plane.000_MeshPart1
+    2300004: Plane.000_MeshPart2
+    2300006: Plane.001_MeshPart0
+    2300008: Plane.001_MeshPart1
+    2300010: Plane.001_MeshPart2
+    2300012: Plane.001_MeshPart3
+    2300014: Plane.002
+    2300016: Plane.003
+    2300018: Plane.004
+    2300020: Plane.005
+    2300022: Plane.006
+    2300024: Plane.007
+    3300000: Plane.000_MeshPart0
+    3300002: Plane.000_MeshPart1
+    3300004: Plane.000_MeshPart2
+    3300006: Plane.001_MeshPart0
+    3300008: Plane.001_MeshPart1
+    3300010: Plane.001_MeshPart2
+    3300012: Plane.001_MeshPart3
+    3300014: Plane.002
+    3300016: Plane.003
+    3300018: Plane.004
+    3300020: Plane.005
+    3300022: Plane.006
+    3300024: Plane.007
+    4300000: Plane.001_MeshPart0
+    4300002: Plane.001_MeshPart1
+    4300004: Plane.001_MeshPart2
+    4300006: Plane.001_MeshPart3
+    4300008: Plane.000_MeshPart0
+    4300010: Plane.000_MeshPart1
+    4300012: Plane.000_MeshPart2
+    4300014: Plane.002
+    4300016: Plane.003
+    4300018: Plane.004
+    4300020: Plane.005
+    4300022: Plane.006
+    4300024: Plane.007
+    10800000: Lamp
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Material.m\xE9tal"
+    second: {fileID: 2100000, guid: 2e8f058781e9cbc4bbfc48459342ad3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.verre
+    second: {fileID: 2100000, guid: f5dbd2113e7dede44a6674d3d861e2b9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
