@@ -56,7 +56,7 @@ public class SimpleController : MonoBehaviour {
         {
             if (plstream.active[i])
             {
-                Vector3 pol_position = plstream.positions[i] -prime_position + new Vector3 ( 0,-5,5);
+                Vector3 pol_position = plstream.positions[i] -prime_position ;
                 Vector4 pol_rotation = plstream.orientations[i];
 
                 // doing crude (90 degree) rotations into frame
@@ -76,7 +76,7 @@ public class SimpleController : MonoBehaviour {
 
                 if (!knuckles[i].activeSelf)
                     knuckles[i].SetActive(true);
-                knuckles[i].transform.position = unity_position /*/ divisor_slider.value*/;
+                knuckles[i].transform.position = (unity_position + new Vector3 ( 0,10,-10)) / 10;
                 knuckles[i].transform.rotation = unity_rotation;
 
                 // set deactivate frame count to 10

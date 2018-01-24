@@ -23,45 +23,45 @@ public class StartNewGame : MonoBehaviour {
     {
         if(starter == 0)
         {
-            PlayerPrefs.SetInt("DepartX",0);
-            PlayerPrefs.SetInt("DepartY",0);
-            PlayerPrefs.SetInt("DepartZ",0);
+            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("DepartZ",-0.90f);
 
-            PlayerPrefs.SetInt("FinX",15);
-            PlayerPrefs.SetInt("FinY",15);
-            PlayerPrefs.SetInt("FinZ",15);
+            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("FinZ",0.90f);
 
-            PlayerPrefs.SetInt("Width",0);
+            PlayerPrefs.SetFloat("Width",0);
             PlayerPrefs.SetInt("Bezier",1);
 
         }
 
         else if (starter == 1)
         {
-            PlayerPrefs.SetInt("DepartX",0);
-            PlayerPrefs.SetInt("DepartY",0);
-            PlayerPrefs.SetInt("DepartZ",0);
+            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("DepartZ",-0.90f);
 
-            PlayerPrefs.SetInt("FinX",15);
-            PlayerPrefs.SetInt("FinY",15);
-            PlayerPrefs.SetInt("FinZ",15);
+            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("FinZ",0.90f);
 
-            PlayerPrefs.SetInt("Width",1);
+            PlayerPrefs.SetFloat("Width",0.2f);
             PlayerPrefs.SetInt("Bezier",1);
         }
 
         else if (starter == 2)
         {
-            PlayerPrefs.SetInt("DepartX",0);
-            PlayerPrefs.SetInt("DepartY",0);
-            PlayerPrefs.SetInt("DepartZ",0);
+            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("DepartZ",-0.90f);
 
-            PlayerPrefs.SetInt("FinX",15);
-            PlayerPrefs.SetInt("FinY",15);
-            PlayerPrefs.SetInt("FinZ",15);
+            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+            PlayerPrefs.SetFloat("FinZ",0.90f);
 
-            PlayerPrefs.SetInt("Width",2);
-            PlayerPrefs.SetInt("Bezier",1);
+            PlayerPrefs.SetFloat("Width",0.3f);
+            PlayerPrefs.SetInt("Bezier",2);
         }
 
         SceneManager.LoadScene(1);
@@ -102,9 +102,9 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("DepartX",parsedResult);
+            PlayerPrefs.SetFloat("DepartX",parsedResult);
             UnityEngine.Debug.Log("DepartX");
-            UnityEngine.Debug.Log(PlayerPrefs.GetInt("DepartX"));
+            UnityEngine.Debug.Log(PlayerPrefs.GetFloat("DepartX"));
         }
         else
         {
@@ -117,7 +117,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("DepartY",parsedResult);
+            PlayerPrefs.SetFloat("DepartY",parsedResult);
         }
         else
         {
@@ -131,7 +131,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("DepartZ",parsedResult);
+            PlayerPrefs.SetFloat("DepartZ",parsedResult);
         }
         else
         {
@@ -144,7 +144,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("FinX",parsedResult);
+            PlayerPrefs.SetFloat("FinX",parsedResult);
         }
         else
         {
@@ -157,7 +157,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("FinY",parsedResult);
+            PlayerPrefs.SetFloat("FinY",parsedResult);
         }
         else
         {
@@ -170,7 +170,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("FinZ",parsedResult);
+            PlayerPrefs.SetFloat("FinZ",parsedResult);
         }
         else
         {
@@ -183,7 +183,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("Width",parsedResult);
+            PlayerPrefs.SetFloat("Width",parsedResult);
         }
         else
         {
@@ -196,7 +196,7 @@ public class StartNewGame : MonoBehaviour {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetInt("Bezier",parsedResult);
+            PlayerPrefs.SetFloat("Bezier",parsedResult);
         }
         else
         {
@@ -212,15 +212,15 @@ public class StartNewGame : MonoBehaviour {
     }
 
     public void Start(){
-    	//Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
+    	Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
     	previousMenu = menu0;
-    	sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetInt("Hand",1);
+    	sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Hand",1);
 
         menu0.SetActive(true);
         menu1.SetActive(false);
         menu2.SetActive(false);
         menu3.SetActive(false);
 
-    	//UnityEngine.Debug.Log(PlayerPrefs.GetInt("Hand",0));
+    	//UnityEngine.Debug.Log(PlayerPrefs.GetFloat("Hand",0));
     }
 }
