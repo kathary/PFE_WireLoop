@@ -43,7 +43,7 @@ public class CreateSpline : MonoBehaviour {
 
 		    start.transform.position = depart.transform.position /*- new Vector3(0,0,(float)0.1)*/;
 		    start.transform.rotation = depart.transform.rotation;
-		    Debug.Log(depart.transform.position);
+		    //Debug.Log(depart.transform.position);
 		    anneau.transform.position = depart.transform.position /*- 0.05f * depart.transform.forward*/;
 		    anneau.transform.rotation = depart.transform.rotation;
 

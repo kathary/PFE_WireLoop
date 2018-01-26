@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 666b70e444b14e64dae09ae0aa934604
+timeCreated: 1516811235
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bouton1
+    100002: Bouton10
+    100004: Bouton11
+    100006: Bouton12
+    100008: Bouton2
+    100010: Bouton3
+    100012: Bouton4
+    100014: Bouton5
+    100016: Bouton6
+    100018: Bouton7
+    100020: Bouton8
+    100022: Bouton9
+    100024: Camera
+    100026: //RootNode
+    100028: Commode.001
+    100030: Lamp
+    100032: Tiroir1
+    100034: Tiroir2
+    100036: Tiroir3
+    100038: Tiroir4
+    100040: Tiroir5
+    100042: Tiroir6
+    400000: Bouton1
+    400002: Bouton10
+    400004: Bouton11
+    400006: Bouton12
+    400008: Bouton2
+    400010: Bouton3
+    400012: Bouton4
+    400014: Bouton5
+    400016: Bouton6
+    400018: Bouton7
+    400020: Bouton8
+    400022: Bouton9
+    400024: Camera
+    400026: //RootNode
+    400028: Commode.001
+    400030: Lamp
+    400032: Tiroir1
+    400034: Tiroir2
+    400036: Tiroir3
+    400038: Tiroir4
+    400040: Tiroir5
+    400042: Tiroir6
+    2000000: Camera
+    2100000: No Name
+    2300000: Bouton1
+    2300002: Bouton10
+    2300004: Bouton11
+    2300006: Bouton12
+    2300008: Bouton2
+    2300010: Bouton3
+    2300012: Bouton4
+    2300014: Bouton5
+    2300016: Bouton6
+    2300018: Bouton7
+    2300020: Bouton8
+    2300022: Bouton9
+    2300024: Commode.001
+    2300026: Tiroir1
+    2300028: Tiroir2
+    2300030: Tiroir3
+    2300032: Tiroir4
+    2300034: Tiroir5
+    2300036: Tiroir6
+    3300000: Bouton1
+    3300002: Bouton10
+    3300004: Bouton11
+    3300006: Bouton12
+    3300008: Bouton2
+    3300010: Bouton3
+    3300012: Bouton4
+    3300014: Bouton5
+    3300016: Bouton6
+    3300018: Bouton7
+    3300020: Bouton8
+    3300022: Bouton9
+    3300024: Commode.001
+    3300026: Tiroir1
+    3300028: Tiroir2
+    3300030: Tiroir3
+    3300032: Tiroir4
+    3300034: Tiroir5
+    3300036: Tiroir6
+    4300000: Bouton1
+    4300002: Tiroir1
+    4300004: Commode.001
+    4300006: Tiroir3
+    4300008: Tiroir2
+    4300010: Tiroir4
+    4300012: Tiroir5
+    4300014: Tiroir6
+    4300016: Bouton7
+    4300018: Bouton8
+    4300020: Bouton9
+    4300022: Bouton11
+    4300024: Bouton10
+    4300026: Bouton12
+    4300028: Bouton5
+    4300030: Bouton3
+    4300032: Bouton6
+    4300034: Bouton4
+    4300036: Bouton2
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

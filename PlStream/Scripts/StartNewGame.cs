@@ -13,10 +13,7 @@ public class StartNewGame : MonoBehaviour {
 	private GameObject previousMenu;
     public GameObject sliderHand;
 
-    public GameObject menu0;
-    public GameObject menu1;
-    public GameObject menu2;
-    public GameObject menu3;
+    public GameObject[] menu;
 
 
     public void LoadByIndex(int starter)
@@ -70,31 +67,8 @@ public class StartNewGame : MonoBehaviour {
     public void LoadNextMenu(int menuIndex)
     {
    		previousMenu.SetActive(false);
-        
-        if (menuIndex == 0)
-        {
-            previousMenu = menu0;
-            menu0.SetActive(true);
-        }
-
-        else if (menuIndex == 1)
-        {
-            previousMenu = menu1 ;
-            menu1.SetActive(true);
-        }
-
-        else if (menuIndex == 2)
-        {
-            previousMenu = menu2;
-            menu2.SetActive(true);
-        }
-
-        else if (menuIndex == 3)
-        {
-            previousMenu = menu3;
-            menu3.SetActive(true);
-        }
-   		
+        previousMenu = menu[menuIndex];
+        menu[menuIndex].SetActive(true);   		
     }
 
     public void EditPointDepartX(Text texte)
@@ -213,13 +187,12 @@ public class StartNewGame : MonoBehaviour {
 
     public void Start(){
     	Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
-    	previousMenu = menu0;
+    	previousMenu = menu[0];
     	sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Hand",1);
-
-        menu0.SetActive(true);
-        menu1.SetActive(false);
-        menu2.SetActive(false);
-        menu3.SetActive(false);
+        for (int i = 1 ;i<menu.Length; i++)
+        {
+            menu[i].SetActive(false);
+        }
 
     	//UnityEngine.Debug.Log(PlayerPrefs.GetFloat("Hand",0));
     }

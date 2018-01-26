@@ -2,12 +2,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SimpleController : MonoBehaviour {
     
     private PlStream plstream;
     private Vector3 prime_position;
-    private GameObject[] knuckles;
+    private GameObject[] player;
     private Timer time;
     private int[] dropped;
 
@@ -17,21 +18,16 @@ public class SimpleController : MonoBehaviour {
         time = GameObject.Find("Canvas").GetComponent<Timer>();
         time.bestTime = PlayerPrefs.GetFloat("Score",0);
         time.best = true;
-        // set divisor defaults
-        //divisor_slider.value = 1.0f;
 
-        // set sensors defaults
-        //sensors_slider.value = 1;
-        //this.transform.position = GameObject.Find("Line").transform.position + new Vector3 (0,2,-5);
         // get the stream component
         plstream = GetComponent<PlStream>();
         
-        // get knuckles
-        knuckles = GameObject.FindGameObjectsWithTag("Knuckle");
-        dropped = new int[knuckles.Length];
+        // get player
+        player = GameObject.FindGameObjectsWithTag("Player");
+        dropped = new int[player.Length];
 
         // set sensors_slider max value
-        //sensors_slider.maxValue = Mathf.Min(knuckles.Length, plstream.active.Length);
+        //sensors_slider.maxValue = Mathf.Min(player.Length, plstream.active.Length);
     }
 
     void Start () {
@@ -42,15 +38,16 @@ public class SimpleController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown("escape"))
-            Application.Quit();
+        {
+            Debug.Log("ca marche");
+            SceneManager.LoadScene(0);
+        }
+        
     }
 
     // called before performing any physics calculations
     void FixedUpdate()
     {
-        // update divisor text
-        //divisor_value.text = divisor_slider.value.ToString("F1");
-
         // for each knuckle up to sensors slider value, update the position
         for (int i = 0; plstream != null && i < 1; ++i)
         {
@@ -61,9 +58,10 @@ public class SimpleController : MonoBehaviour {
 
                 // doing crude (90 degree) rotations into frame
                 Vector3 unity_position;
-                unity_position.x = -pol_position.y;
+                //Debug.Log(pol_position.y);
+                unity_position.x = -pol_position.x;
                 unity_position.y = pol_position.z;
-                unity_position.z = -pol_position.x;
+                unity_position.z = pol_position.y;
 
 
                 Quaternion unity_rotation;
@@ -72,12 +70,12 @@ public class SimpleController : MonoBehaviour {
                 unity_rotation.y = pol_rotation[3];
                 unity_rotation.z = -pol_rotation[1];
                 unity_rotation *= new Quaternion((float)0.70707,0,0,(float)0.70707);
-                //unity_rotation = Quaternion.Inverse(unity_rotation);
+                
 
-                if (!knuckles[i].activeSelf)
-                    knuckles[i].SetActive(true);
-                knuckles[i].transform.position = (unity_position + new Vector3 ( 0,10,-10)) / 10;
-                knuckles[i].transform.rotation = unity_rotation;
+                if (!player[i].activeSelf)
+                    player[i].SetActive(true);
+                player[i].transform.position = (unity_position + new Vector3 ( 0,10,-10)) / 10;
+                player[i].transform.rotation = unity_rotation;
 
                 // set deactivate frame count to 10
                 dropped[i] = 10;
@@ -89,13 +87,13 @@ public class SimpleController : MonoBehaviour {
             }
             else
             {
-                if(knuckles[i])
+                if(player[i])
                 {
-                   if (knuckles[i].activeSelf)
+                   if (player[i].activeSelf)
                 {
                     dropped[i] -= 1;
                     if (dropped[i] <= 0)
-                        knuckles[i].SetActive(false);
+                        player[i].SetActive(false);
                 } 
                 }
                 
