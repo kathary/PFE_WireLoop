@@ -23,21 +23,21 @@ public class StartNewGame : MonoBehaviour {
             if(PlayerPrefs.GetInt("Hand",1) == 0)
             {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",-0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",-0.70f);
             }
             else {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",-0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",0.70f);
             }
             
             PlayerPrefs.SetFloat("Width",0);
@@ -51,21 +51,21 @@ public class StartNewGame : MonoBehaviour {
             if(PlayerPrefs.GetInt("Hand",1) == 0)
             {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",-0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",-0.70f);
             }
             else {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",-0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",0.70f);
             }
 
             PlayerPrefs.SetFloat("Width",0.2f);
@@ -78,21 +78,21 @@ public class StartNewGame : MonoBehaviour {
             if(PlayerPrefs.GetInt("Hand",1) == 0)
             {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",-0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",-0.70f);
             }
             else {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",-0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",0.70f);
             }
 
             PlayerPrefs.SetFloat("Width",0.3f);
@@ -105,21 +105,21 @@ public class StartNewGame : MonoBehaviour {
             if(PlayerPrefs.GetInt("Hand",1) == 0)
             {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",-0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",-0.70f);
             }
             else {
                 PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("DepartZ",-0.70f);
 
                 PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-                PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (1.3f));
+                PlayerPrefs.SetFloat("FinZ",0.70f);
             }
         }
 
@@ -185,7 +185,7 @@ public class StartNewGame : MonoBehaviour {
     }
 
     public void Start(){
-        Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
+        //Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
         previousMenu = menu[0];
         sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Hand",1);
         for (int i = 1 ;i<menu.Length; i++)
