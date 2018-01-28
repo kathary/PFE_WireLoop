@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.2937088, g: 0.22369966, b: 0.14544493, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -7367,7 +7367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spline: {fileID: 1354446668}
-  frequency: 100
+  frequency: 1000
   lookForward: 1
   items:
   - {fileID: 400000, guid: 07bc9122086c6428c8abcca8696763ac, type: 2}
@@ -15690,10 +15690,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 27, y: 6, z: 0}
-  - {x: 32.42023, y: 5.9040356, z: 0.45461798}
-  - {x: -19.678326, y: 15, z: 10.69099}
-  - {x: -10, y: 10, z: 13}
+  - {x: 0, y: 6, z: 1}
+  - {x: 5.420231, y: 5.9040356, z: 1.454618}
+  - {x: -9.678326, y: 15, z: -3.3090096}
+  - {x: 0, y: 10, z: -1}
   modes: 0000000000000000
   loop: 0
   isRand: 1
