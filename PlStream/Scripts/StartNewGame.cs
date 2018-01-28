@@ -30,7 +30,6 @@ public class StartNewGame : MonoBehaviour {
 
             PlayerPrefs.SetFloat("Width",0);
             PlayerPrefs.SetInt("Bezier",1);
-
         }
 
         else if (starter == 1)
