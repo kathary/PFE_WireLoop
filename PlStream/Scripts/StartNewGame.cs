@@ -10,7 +10,7 @@ using System.IO;
 
 public class StartNewGame : MonoBehaviour {
 
-	private GameObject previousMenu;
+    private GameObject previousMenu;
     public GameObject sliderHand;
 
     public GameObject[] menu;
@@ -20,44 +20,107 @@ public class StartNewGame : MonoBehaviour {
     {
         if(starter == 0)
         {
-            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("DepartZ",-0.90f);
+            if(PlayerPrefs.GetInt("Hand",1) == 0)
+            {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",0.90f);
 
-            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",-0.90f);
+            }
+            else {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",-0.90f);
 
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",0.90f);
+            }
+            
             PlayerPrefs.SetFloat("Width",0);
             PlayerPrefs.SetInt("Bezier",1);
+            PlayerPrefs.SetFloat("Size",5);
+
         }
 
         else if (starter == 1)
         {
-            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("DepartZ",-0.90f);
+            if(PlayerPrefs.GetInt("Hand",1) == 0)
+            {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",0.90f);
 
-            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",-0.90f);
+            }
+            else {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",0.90f);
+            }
 
             PlayerPrefs.SetFloat("Width",0.2f);
             PlayerPrefs.SetInt("Bezier",1);
+            PlayerPrefs.SetFloat("Size",5);
         }
 
         else if (starter == 2)
         {
-            PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("DepartZ",-0.90f);
+            if(PlayerPrefs.GetInt("Hand",1) == 0)
+            {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",0.90f);
 
-            PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
-            PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
-            PlayerPrefs.SetFloat("FinZ",0.90f);
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",-0.90f);
+            }
+            else {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",0.90f);
+            }
 
             PlayerPrefs.SetFloat("Width",0.3f);
             PlayerPrefs.SetInt("Bezier",2);
+            PlayerPrefs.SetFloat("Size",5);
+        }
+
+        else if (starter == 3)
+        {
+            if(PlayerPrefs.GetInt("Hand",1) == 0)
+            {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",0.90f);
+
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",-0.90f);
+            }
+            else {
+                PlayerPrefs.SetFloat("DepartX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("DepartY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("DepartZ",-0.90f);
+
+                PlayerPrefs.SetFloat("FinX",(UnityEngine.Random.value * 0.8f) + (-0.4f));
+                PlayerPrefs.SetFloat("FinY",(UnityEngine.Random.value * 0.3f) + (0.95f));
+                PlayerPrefs.SetFloat("FinZ",0.90f);
+            }
         }
 
         SceneManager.LoadScene(1);
@@ -65,85 +128,22 @@ public class StartNewGame : MonoBehaviour {
 
     public void LoadNextMenu(int menuIndex)
     {
-   		previousMenu.SetActive(false);
+        previousMenu.SetActive(false);
         previousMenu = menu[menuIndex];
-        menu[menuIndex].SetActive(true);   		
+        menu[menuIndex].SetActive(true);        
     }
 
-    public void EditPointDepartX(Text texte)
+    public void EditMode(Dropdown drop)
+    {
+        PlayerPrefs.SetString("Mode",drop.captionText.text);
+    }
+
+    public void EditSize(Text texte)
     {
         int parsedResult;
         if(int.TryParse(texte.text, out parsedResult))
         {
-            PlayerPrefs.SetFloat("DepartX",parsedResult);
-            UnityEngine.Debug.Log("DepartX");
-            UnityEngine.Debug.Log(PlayerPrefs.GetFloat("DepartX"));
-        }
-        else
-        {
-            texte.text = "";
-        }  
-    }
-
-    public void EditPointDepartY(Text texte)
-    {
-        int parsedResult;
-        if(int.TryParse(texte.text, out parsedResult))
-        {
-            PlayerPrefs.SetFloat("DepartY",parsedResult);
-        }
-        else
-        {
-            texte.text = "";
-        }  
-    }
-
-
-    public void EditPointDepartZ(Text texte)
-    {
-        int parsedResult;
-        if(int.TryParse(texte.text, out parsedResult))
-        {
-            PlayerPrefs.SetFloat("DepartZ",parsedResult);
-        }
-        else
-        {
-            texte.text = "";
-        }  
-    }
-
-    public void EditPointFinX(Text texte)
-    {
-        int parsedResult;
-        if(int.TryParse(texte.text, out parsedResult))
-        {
-            PlayerPrefs.SetFloat("FinX",parsedResult);
-        }
-        else
-        {
-            texte.text = "";
-        }  
-    }
-
-    public void EditPointFinY(Text texte)
-    {
-        int parsedResult;
-        if(int.TryParse(texte.text, out parsedResult))
-        {
-            PlayerPrefs.SetFloat("FinY",parsedResult);
-        }
-        else
-        {
-            texte.text = "";
-        }  
-    }
-
-    public void EditPointFinZ(Text texte)
-    {
-        int parsedResult;
-        if(int.TryParse(texte.text, out parsedResult))
-        {
-            PlayerPrefs.SetFloat("FinZ",parsedResult);
+            PlayerPrefs.SetFloat("Size",parsedResult);
         }
         else
         {
@@ -181,18 +181,18 @@ public class StartNewGame : MonoBehaviour {
 
     public void ChangeMainHand()
     {
-   		PlayerPrefs.SetInt("Hand", (int)sliderHand.GetComponent<Slider>().value );
+        PlayerPrefs.SetInt("Hand", (int)sliderHand.GetComponent<Slider>().value );
     }
 
     public void Start(){
-    	Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
-    	previousMenu = menu[0];
-    	sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Hand",1);
+        Process.Start(Application.dataPath + "\\PlStream\\UnityExport.exe");
+        previousMenu = menu[0];
+        sliderHand.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Hand",1);
         for (int i = 1 ;i<menu.Length; i++)
         {
             menu[i].SetActive(false);
         }
 
-    	//UnityEngine.Debug.Log(PlayerPrefs.GetFloat("Hand",0));
+        //UnityEngine.Debug.Log(PlayerPrefs.GetFloat("Hand",0));
     }
 }

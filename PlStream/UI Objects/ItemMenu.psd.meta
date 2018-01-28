@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e77403b5364af944d889ac4910e4c46f
-timeCreated: 1516660500
+guid: 45f1ced6d7005c44c84173940e4deb2e
+timeCreated: 1517092281
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -21,6 +21,8 @@ TextureImporter:
     21300028: ChangeHand
     21300030: Left
     21300032: Right
+    21300034: PlayerSize
+    21300036: Mode
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -301,7 +303,7 @@ TextureImporter:
         width: 357
         height: 164
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +317,7 @@ TextureImporter:
         width: 191
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,6 +330,34 @@ TextureImporter:
         y: 268
         width: 260
         height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayerSize
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1139
+        width: 293
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mode
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 140
+        width: 259
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

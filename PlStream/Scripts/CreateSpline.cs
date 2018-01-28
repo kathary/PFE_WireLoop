@@ -27,25 +27,17 @@ public class CreateSpline : MonoBehaviour {
 		    GameObject[] objs = GameObject.FindGameObjectsWithTag("Line");
 		    GameObject depart = null;
 		    GameObject fin = null;
+		    depart = objs[0];
+		    fin = objs[objs.Length -1];
 		    
-		    foreach (GameObject go in objs) {
-		      if (go.transform.position == positionDepart) {
-		        depart = go;
-		        break;
-		      }
-		    }
-		    foreach (GameObject go in objs) {
-		      if (go.transform.position == positionFin) {
-		        fin = go;
-		        break;
-		      }
-		    }
 
-		    start.transform.position = depart.transform.position /*- new Vector3(0,0,(float)0.1)*/;
+		    start.transform.position = depart.transform.position ;
 		    start.transform.rotation = depart.transform.rotation;
 		    //Debug.Log(depart.transform.position);
-		    anneau.transform.position = depart.transform.position /*- 0.05f * depart.transform.forward*/;
+
+		    anneau.transform.position = depart.transform.position - 0.5f * depart.transform.forward;
 		    anneau.transform.rotation = depart.transform.rotation;
+		    anneau.transform.localScale = new Vector3(0.03f * PlayerPrefs.GetFloat("Size",10),0.03f * PlayerPrefs.GetFloat("Size",10),0.03f * PlayerPrefs.GetFloat("Size",10));
 
 		    end.transform.position = fin.transform.position;
 		    end.transform.rotation = fin.transform.rotation;

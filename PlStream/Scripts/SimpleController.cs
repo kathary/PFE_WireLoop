@@ -11,7 +11,20 @@ public class SimpleController : MonoBehaviour {
     private GameObject[] player;
     private Timer time;
     private int[] dropped;
-
+    private Vector3 Front;
+    private Vector3 Right;
+    private Vector3 Up;
+    private bool onlyOnce = true;
+    private float diffX;
+    private float diffY;
+    private float diffZ;
+    private float diffRX;
+    private float diffRY;
+    private float diffRZ;
+    private float diffRW;
+    private float lastPosX;
+    private float lastPosY;
+    private float lastPosZ;
     // Use this for initialization
     void Awake ()
     {
@@ -33,13 +46,21 @@ public class SimpleController : MonoBehaviour {
     void Start () {
         // initializes arrays, fixes positions
         zero();
+        Front = this.transform.forward;
+        Right = this.transform.right;
+        Up = this.transform.up;
+        lastPosX = 0;
+        lastPosY = 0;
+        lastPosZ = 0;
+
+        
+
     }
     
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown("escape"))
         {
-            Debug.Log("ca marche");
             SceneManager.LoadScene(0);
         }
         
@@ -56,12 +77,12 @@ public class SimpleController : MonoBehaviour {
                 Vector3 pol_position = plstream.positions[i] -prime_position ;
                 Vector4 pol_rotation = plstream.orientations[i];
 
-                // doing crude (90 degree) rotations into frame
-                Vector3 unity_position;
-                //Debug.Log(pol_position.y);
-                unity_position.x = -pol_position.x;
-                unity_position.y = pol_position.z;
-                unity_position.z = pol_position.y;
+                diffX = pol_position.x - lastPosX;
+                diffY = pol_position.y - lastPosY;
+                diffZ = pol_position.z - lastPosZ;
+                lastPosX = pol_position.x;
+                lastPosY = pol_position.y;
+                lastPosZ = pol_position.z;
 
 
                 Quaternion unity_rotation;
@@ -71,11 +92,8 @@ public class SimpleController : MonoBehaviour {
                 unity_rotation.z = -pol_rotation[1];
                 unity_rotation *= new Quaternion((float)0.70707,0,0,(float)0.70707);
                 
-
-                if (!player[i].activeSelf)
-                    player[i].SetActive(true);
-                player[i].transform.position = (unity_position + new Vector3 ( 0,10,-10)) / 10;
-                player[i].transform.rotation = unity_rotation;
+                player[i].transform.position = player[i].transform.position + ((-diffX) * Front + diffZ * Up + (-diffY) * Right) / 10;
+                player[i].transform.rotation = unity_rotation ;
 
                 // set deactivate frame count to 10
                 dropped[i] = 10;
@@ -90,11 +108,11 @@ public class SimpleController : MonoBehaviour {
                 if(player[i])
                 {
                    if (player[i].activeSelf)
-                {
-                    dropped[i] -= 1;
-                    if (dropped[i] <= 0)
-                        player[i].SetActive(false);
-                } 
+                    {
+                        dropped[i] -= 1;
+                        if (dropped[i] <= 0)
+                            player[i].SetActive(false);
+                    } 
                 }
                 
             }

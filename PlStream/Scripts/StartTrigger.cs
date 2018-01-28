@@ -19,7 +19,6 @@ public class StartTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("here");
 		if(time.count == false && other.name == "anneau")
 		{
 			Debug.Log("GOOOO");
